@@ -1,0 +1,38 @@
+#root {
+  min-height: 100dvh;
+  max-width: 100dvw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body,
+html {
+  background-color: #f4f4f4;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.wrapper {
+  height: auto;
+  min-height: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.outer {
+  position: relative;
+  width: 100dvw;
+  height: 90dvh;
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-border {
+  border: none;
+}

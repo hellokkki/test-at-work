@@ -1,0 +1,13 @@
+.dots-icon {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.dots-icon circle {
+    fill: black;
+    transition: fill 0.3s;
+  }
+  
+  .dots-icon:hover circle {
+    fill: rgb(0, 255, 242);
+  }

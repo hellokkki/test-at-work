@@ -1,0 +1,59 @@
+
+.user-card {
+  margin: 5px;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .user-card {
+
+        &--view {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "photo" "info";
+
+        width: 380px;
+        height: 200px;
+        }
+
+        &--photo {
+          grid-area: "photo";
+        }
+        
+        &--info {
+            grid-area: "info";
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 60% 40%;
+            grid-template-areas: "info-header" "info-footer";
+            gap: 20px;
+
+            margin-left: 1rem;
+
+            &__header {
+              grid-area: "info-header";
+            }
+
+            &__footer {
+              grid-area: "info-footer";
+            }
+        }
+      }
+      
+}
+
+
+.card-image {
+  mix-blend-mode: multiply;
+}
+
+.card-archived-image {
+  filter: gray; /* IE */
+  -webkit-filter: grayscale(1); /* Old WebKit */
+  -webkit-filter: grayscale(100%); /* New WebKit */
+  filter: url(resources.svg#desaturate); /* older Firefox */
+  filter: grayscale(100%); /* Current draft standard */
+}
